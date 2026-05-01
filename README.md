@@ -267,19 +267,6 @@ Deployment flow:
 4. Set production environment variables in both services
 5. Point `VITE_API_BASE_URL` to the deployed backend URL
 
-## Useful docs in this repo
-
-- [API_DOCUMENTATION.md](API_DOCUMENTATION.md)
-- [FIREBASE_SETUP.md](FIREBASE_SETUP.md)
-- [H_SCORE_IMPLEMENTATION.md](H_SCORE_IMPLEMENTATION.md)
-- [IMPLEMENTATION_ROADMAP.md](IMPLEMENTATION_ROADMAP.md)
-- [IMPLEMENTATION_SUMMARY.md](IMPLEMENTATION_SUMMARY.md)
-- [PHASE2_COMPLETION.md](PHASE2_COMPLETION.md)
-- [PROJECT_STATUS.md](PROJECT_STATUS.md)
-- [QUICK_STATUS.md](QUICK_STATUS.md)
-- [TESTING_GUIDE.md](TESTING_GUIDE.md)
-- [WHATS_REMAINING.md](WHATS_REMAINING.md)
-
 ## Notes
 
 - The project is still a prototype/hackathon-style application, not a clinical system
