@@ -1,0 +1,12 @@
+# backend/.gitignore
+.env
+.env.local
+.env.production
+serviceAccountKey.json
+node_modules
+dist
+dist-ssr
+
+# frontend/.gitignore
+.env.local
+.env.production.local

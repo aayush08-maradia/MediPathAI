@@ -1,0 +1,340 @@
+{
+  "conditions": [
+    {
+      "id": "cond_001",
+      "name": "Coronary Artery Disease",
+      "hindi": "कोरोनरी आर्टरी रोग",
+      "icd10": "I25.9",
+      "severity": "high",
+      "symptoms": ["chest pain", "chest discomfort", "pain while walking", "exertional pain", "shortness of breath", "fatigue"],
+      "hindiSymptoms": ["सीने में दर्द", "सीने में परेशानी", "चलते समय दर्द", "सांस लेने में कठिनाई"],
+      "recommendedProcedures": ["angiography", "angioplasty", "stent placement", "coronary artery bypass"],
+      "specialty": "Cardiology",
+      "costBase": {
+        "min": 150000,
+        "max": 300000,
+        "stayDays": 3,
+        "perDay": 15000,
+        "diagnostics": 15000,
+        "medicines": 10000,
+        "contingencyPct": 25
+      },
+      "comorbidityFactors": {
+        "diabetes": 1.15,
+        "hypertension": 1.1,
+        "obesity": 1.12,
+        "smoking": 1.08
+      },
+      "ageFactors": {
+        "below_50": 0.9,
+        "50_to_65": 1.0,
+        "above_65": 1.25
+      }
+    },
+    {
+      "id": "cond_002",
+      "name": "Type 2 Diabetes",
+      "hindi": "टाइप 2 मधुमेह",
+      "icd10": "E11.9",
+      "severity": "medium",
+      "symptoms": ["increased thirst", "frequent urination", "fatigue", "blurred vision", "slow wound healing", "weight loss"],
+      "hindiSymptoms": ["प्यास बढ़ना", "बार-बार पेशाब आना", "थकान", "वजन में कमी"],
+      "recommendedProcedures": ["blood glucose test", "HbA1c test", "kidney function test", "eye examination"],
+      "specialty": "Endocrinology",
+      "costBase": {
+        "min": 5000,
+        "max": 20000,
+        "stayDays": 0,
+        "perDay": 0,
+        "diagnostics": 5000,
+        "medicines": 2000,
+        "contingencyPct": 10
+      },
+      "comorbidityFactors": {
+        "hypertension": 1.1,
+        "obesity": 1.15
+      },
+      "ageFactors": {
+        "below_50": 0.8,
+        "50_to_65": 1.0,
+        "above_65": 1.15
+      }
+    },
+    {
+      "id": "cond_003",
+      "name": "Hypertension",
+      "hindi": "उच्च रक्तचाप",
+      "icd10": "I10",
+      "severity": "medium",
+      "symptoms": ["headache", "dizziness", "chest pain", "shortness of breath", "nosebleed"],
+      "hindiSymptoms": ["सिरदर्द", "चक्कर आना", "सीने में दर्द"],
+      "recommendedProcedures": ["blood pressure monitoring", "ECG", "blood tests"],
+      "specialty": "Cardiology",
+      "costBase": {
+        "min": 3000,
+        "max": 10000,
+        "stayDays": 0,
+        "perDay": 0,
+        "diagnostics": 3000,
+        "medicines": 1500,
+        "contingencyPct": 10
+      },
+      "comorbidityFactors": {
+        "diabetes": 1.1,
+        "obesity": 1.08
+      },
+      "ageFactors": {
+        "below_50": 0.9,
+        "50_to_65": 1.0,
+        "above_65": 1.1
+      }
+    },
+    {
+      "id": "cond_004",
+      "name": "Knee Replacement",
+      "hindi": "घुटने की सर्जरी",
+      "icd10": "Z96.6",
+      "severity": "medium",
+      "symptoms": ["knee pain", "knee swelling", "stiffness", "difficulty walking", "joint pain", "osteoarthritis"],
+      "hindiSymptoms": ["घुटने में दर्द", "चलने में कठिनाई", "सूजन"],
+      "recommendedProcedures": ["X-ray", "MRI", "total knee replacement", "partial knee replacement"],
+      "specialty": "Orthopedics",
+      "costBase": {
+        "min": 200000,
+        "max": 500000,
+        "stayDays": 5,
+        "perDay": 10000,
+        "diagnostics": 20000,
+        "medicines": 15000,
+        "contingencyPct": 20
+      },
+      "comorbidityFactors": {
+        "diabetes": 1.15,
+        "hypertension": 1.08,
+        "obesity": 1.2
+      },
+      "ageFactors": {
+        "below_50": 0.95,
+        "50_to_65": 1.0,
+        "above_65": 1.15
+      }
+    },
+    {
+      "id": "cond_005",
+      "name": "Cancer - Lung",
+      "hindi": "फेफड़ों का कैंसर",
+      "icd10": "C34.90",
+      "severity": "critical",
+      "symptoms": ["persistent cough", "chest pain", "shortness of breath", "coughing blood", "hoarseness", "weight loss"],
+      "hindiSymptoms": ["लगातार खांसी", "सीने में दर्द", "वजन में कमी"],
+      "recommendedProcedures": ["CT scan", "biopsy", "chemotherapy", "radiation", "surgery"],
+      "specialty": "Oncology",
+      "costBase": {
+        "min": 500000,
+        "max": 1500000,
+        "stayDays": 10,
+        "perDay": 20000,
+        "diagnostics": 50000,
+        "medicines": 100000,
+        "contingencyPct": 40
+      },
+      "comorbidityFactors": {
+        "diabetes": 1.2,
+        "smoking": 1.3
+      },
+      "ageFactors": {
+        "below_50": 1.1,
+        "50_to_65": 1.0,
+        "above_65": 1.2
+      }
+    },
+    {
+      "id": "cond_006",
+      "name": "Cataract",
+      "hindi": "मोतियाबिंद",
+      "icd10": "H26.9",
+      "severity": "low",
+      "symptoms": ["blurred vision", "difficulty seeing at night", "seeing halos around lights", "color fading"],
+      "hindiSymptoms": ["धुंधली दृष्टि", "रात को देखने में कठिनाई"],
+      "recommendedProcedures": ["eye test", "cataract surgery", "IOL implantation"],
+      "specialty": "Ophthalmology",
+      "costBase": {
+        "min": 30000,
+        "max": 80000,
+        "stayDays": 1,
+        "perDay": 5000,
+        "diagnostics": 5000,
+        "medicines": 2000,
+        "contingencyPct": 10
+      },
+      "comorbidityFactors": {
+        "diabetes": 1.2
+      },
+      "ageFactors": {
+        "below_50": 0.8,
+        "50_to_65": 1.0,
+        "above_65": 1.3
+      }
+    },
+    {
+      "id": "cond_007",
+      "name": "Appendicitis",
+      "hindi": "अपेंडिसाइटिस",
+      "icd10": "K35.80",
+      "severity": "high",
+      "symptoms": ["abdominal pain", "lower right abdomen pain", "nausea", "vomiting", "fever", "constipation"],
+      "hindiSymptoms": ["पेट में दर्द", "उल्टी", "बुखार"],
+      "recommendedProcedures": ["ultrasound", "CT scan", "appendectomy", "laparoscopic surgery"],
+      "specialty": "General Surgery",
+      "costBase": {
+        "min": 80000,
+        "max": 200000,
+        "stayDays": 2,
+        "perDay": 10000,
+        "diagnostics": 8000,
+        "medicines": 5000,
+        "contingencyPct": 15
+      },
+      "comorbidityFactors": {
+        "diabetes": 1.15
+      },
+      "ageFactors": {
+        "below_50": 0.95,
+        "50_to_65": 1.0,
+        "above_65": 1.2
+      }
+    },
+    {
+      "id": "cond_008",
+      "name": "Thyroid Disorder",
+      "hindi": "थायराइड विकार",
+      "icd10": "E07.9",
+      "severity": "medium",
+      "symptoms": ["weight gain", "fatigue", "cold sensitivity", "hair loss", "muscle weakness", "mood changes"],
+      "hindiSymptoms": ["वजन बढ़ना", "थकान", "बाल गिरना"],
+      "recommendedProcedures": ["TSH test", "thyroid ultrasound", "thyroid biopsy"],
+      "specialty": "Endocrinology",
+      "costBase": {
+        "min": 5000,
+        "max": 20000,
+        "stayDays": 0,
+        "perDay": 0,
+        "diagnostics": 5000,
+        "medicines": 2000,
+        "contingencyPct": 10
+      },
+      "comorbidityFactors": {},
+      "ageFactors": {
+        "below_50": 0.9,
+        "50_to_65": 1.0,
+        "above_65": 1.1
+      }
+    },
+    {
+      "id": "cond_009",
+      "name": "Asthma",
+      "hindi": "अस्थमा",
+      "icd10": "J45.9",
+      "severity": "medium",
+      "symptoms": ["shortness of breath", "wheezing", "chest tightness", "coughing", "difficulty exercising"],
+      "hindiSymptoms": ["सांस लेने में कठिनाई", "सीटी बजना", "खांसी"],
+      "recommendedProcedures": ["spirometry", "chest X-ray", "allergy testing", "inhaler therapy"],
+      "specialty": "Pulmonology",
+      "costBase": {
+        "min": 5000,
+        "max": 30000,
+        "stayDays": 0,
+        "perDay": 0,
+        "diagnostics": 5000,
+        "medicines": 3000,
+        "contingencyPct": 15
+      },
+      "comorbidityFactors": {},
+      "ageFactors": {
+        "below_50": 0.9,
+        "50_to_65": 1.0,
+        "above_65": 1.15
+      }
+    },
+    {
+      "id": "cond_010",
+      "name": "Pregnancy - Normal",
+      "hindi": "सामान्य गर्भावस्था",
+      "icd10": "Z33.2",
+      "severity": "low",
+      "symptoms": ["morning sickness", "fatigue", "breast tenderness", "mood changes"],
+      "hindiSymptoms": ["सुबह की मितली", "थकान"],
+      "recommendedProcedures": ["prenatal ultrasound", "blood tests", "normal delivery", "cesarean section"],
+      "specialty": "Obstetrics & Gynecology",
+      "costBase": {
+        "min": 30000,
+        "max": 100000,
+        "stayDays": 2,
+        "perDay": 8000,
+        "diagnostics": 10000,
+        "medicines": 5000,
+        "contingencyPct": 20
+      },
+      "comorbidityFactors": {
+        "diabetes": 1.3
+      },
+      "ageFactors": {
+        "below_35": 0.9,
+        "35_to_40": 1.0,
+        "above_40": 1.15
+      }
+    }
+  ],
+  "procedures": [
+    {
+      "id": "proc_001",
+      "name": "Angioplasty",
+      "hindi": "एंजियोप्लास्टी",
+      "icd10": "I36.02",
+      "specialty": "Cardiology",
+      "typicalCost": { "min": 150000, "max": 300000 },
+      "duration_days": 3,
+      "icu_probability": 0.3,
+      "complications": ["restenosis", "bleeding", "infection"]
+    },
+    {
+      "id": "proc_002",
+      "name": "Total Knee Replacement",
+      "hindi": "पूर्ण घुटना प्रतिस्थापन",
+      "icd10": "0SR9099",
+      "specialty": "Orthopedics",
+      "typicalCost": { "min": 200000, "max": 500000 },
+      "duration_days": 5,
+      "icu_probability": 0.1,
+      "complications": ["infection", "blood clots", "pain"]
+    },
+    {
+      "id": "proc_003",
+      "name": "Chemotherapy",
+      "hindi": "कीमोथेरेपी",
+      "icd10": "Z51.11",
+      "specialty": "Oncology",
+      "typicalCost": { "min": 300000, "max": 1500000 },
+      "duration_days": 10,
+      "icu_probability": 0.2,
+      "complications": ["nausea", "infection", "hair loss"]
+    }
+  ],
+  "specialties": [
+    "Cardiology",
+    "Orthopedics",
+    "Oncology",
+    "Endocrinology",
+    "Ophthalmology",
+    "General Surgery",
+    "Pulmonology",
+    "Obstetrics & Gynecology",
+    "Neurology",
+    "Gastroenterology",
+    "Nephrology",
+    "Urology",
+    "ENT",
+    "Dermatology",
+    "Psychiatry"
+  ]
+}
