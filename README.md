@@ -202,7 +202,6 @@ This project uses Firebase for authentication and Firestore for user data.
 5. Download the service account key JSON and place it in `backend/serviceAccountKey.json`
 6. Update Firestore security rules to allow authenticated access to each user profile
 
-See [FIREBASE_SETUP.md](FIREBASE_SETUP.md) for the full step-by-step setup.
 
 ## API overview
 
@@ -250,22 +249,6 @@ See [FIREBASE_SETUP.md](FIREBASE_SETUP.md) for the full step-by-step setup.
 
 - `POST /api/confidence/calculate`
 - `POST /api/confidence/improve-suggestions`
-
-## Deployment recommendation
-
-For this stack, the simplest deployment path is:
-
-- Frontend: Vercel
-- Backend: Render
-- Database/Auth: Firebase
-
-Deployment flow:
-
-1. Push the repository to GitHub
-2. Deploy the frontend from `frontend/healthpath-ai-main`
-3. Deploy the backend from `backend`
-4. Set production environment variables in both services
-5. Point `VITE_API_BASE_URL` to the deployed backend URL
 
 ## Notes
 
